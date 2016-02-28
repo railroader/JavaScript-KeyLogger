@@ -1,0 +1,33 @@
+﻿body {
+    margin:0px;
+    padding:0px;
+    background-image: url('../images/index.png');
+    font-family:Arial;
+    color:#fff;
+    
+
+                                        
+}
+.form-signin-heading{
+        color:#fff;
+        font-family:Arial;
+        font-size: 30px;
+
+}
+.form-signin{
+    display:block;
+    margin:0px auto 0px auto;
+    width:400px;
+}
+.btn{
+    display:block;
+    border-radius:5px;
+    width:200px;
+    height:50px;
+    font-family:Verdana;
+    font-size:20px;
+}
+.input-block-level{
+    padding:5px;
+    border-radius:5px;
+}

